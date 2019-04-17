@@ -8,7 +8,94 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Sementic Ui
+@import '~semantic-ui-css/semantic';
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.background-image {
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-transparent {
+  background-color: rgba(0, 0, 0, 0.0) !important;
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+}
+
+section > .overlay > .row > .header {
+  margin-top: 30vh;
+  margin-bottom: 20%;
+}
+
+section > .overlay > .row > .header-app {
+  margin-top: 10vh;
+}
+
+section > .overlay > .row > .header-app > .card {
+  height: 80vh;
+}
+
+section > .overlay > .row > .header > h1 {
+   font-size: 80px;
+}
+
+section > .overlay > .row > .header > p {
+  font-size: 40px;
+}
+
+.btn-red {
+  background-color: rgb(206, 46, 6, 0.5);
+  color:white;
+  padding: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.btn-red:hover {
+  background-color: rgb(206, 46, 6, 0.7);
+  color:white;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+.card-dark {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-responsive {
+  height: 80%;
+  width: 40vh;
+}
+
+.form-control {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color:white;
+  border:none;
+  border-radius: none;
+}
+
+.form-control:focus {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color:white;
+  border:none;
+  border-radius: none;
+  outline: none;
 }
